@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        A leap year is exactly divisible by 4 except for century years (years ending with 00)
+        The century year is is a leap year only if its perfectly divisible by 400
+        */
+
+        let checkLeapYear = function (year) {
+            return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+        }
+
+        alert (checkLeapYear(2000));
+        alert (checkLeapYear(2019));
+        alert (checkLeapYear(2016));
+    </script>
+</body>
+
+</html>

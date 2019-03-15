@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const num = 8;
+
+            if(checkPrime(num)){
+                alert(`O número ${num} é primo!`)
+            }
+            else{
+                alert (`O número ${num} não é primo!`)
+            }
+
+            function checkPrime (num){
+                let isPrime = true;
+                for (let i = 2; i < num; i++){
+                    if (num % i === 0){
+                        isPrime = false;
+                        break;
+                    }
+                }
+                return isPrime;
+            
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let checkPerfect = function (num) {
+            let temp = 0;
+            for(let i = 1; i <=num / 2; i++){
+                if(num % i === 0){
+                    temp = temp + i;
+                }
+            }
+            if(temp === num && temp !== 0){
+                return true;
+            }else {
+                return false;
+            }
+        }
+
+        alert (checkPerfect(12));
+        alert (checkPerfect(28));
+        alert (checkPerfect(350));
+    </script>
+</body>
+
+</html>
